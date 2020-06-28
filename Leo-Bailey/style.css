@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f3f3f2;
+}
+
+.container {
+  max-width: 723px;
+  width: 100%;
+  margin: auto;
+  border: 1px solid red;
+  padding: 42px 42px 70px 42px;
+}
+.container ul {
+  list-style: none;
+}
+.container .header {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 21px;
+}
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #f3f3f2;
+  margin: 0.7rem 0;
+  display: block;
+}
+.container .actions {
+  /* max-width: 87px; */
+  max-width: 87px;
+  /* width: 100%; */
+}
+.container .actions button {
+  width: 100%;
+  padding: 8px 23px;
+  background-color: #2f3030;
+  color: #fff;
+  font-size: 15px;
+  border: 0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.container .actions button i {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.header__img {
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+.header__img .img__wrapper {
+  width: 80px;
+  height: 80px;
+  margin-right: 1rem;
+  position: relative;
+}
+.header__img .img__wrapper img {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.header__img h3 {
+  margin-bottom: 0.5rem;
+}
+.menu {
+  padding: 35px 0;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+  font-size: 13px;
+}
+.menu ul li a {
+  color: #939794;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cards .card {
+  border: 1px solid #f3f3f2;
+  padding: 15px;
+  width: 200px;
+  font-size: 12px;
+  border-radius: 10px;
+}
+.cards .card.active {
+  background-color: #2f3030;
+  color: #fff;
+}
+.cards .card.active .card-body a {
+  color: #939794;
+}
+.card .card-header {
+  margin-bottom: 15px;
+}
+.card .card-header span {
+  color: #36cc9b;
+}
+.card .card-header i {
+  color: #36cc9b;
+}
+.card .card-header,
+.card .card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .card-body a {
+  color: #2f3030;
+  margin-right: 10px;
+}
+.card .card-body div i {
+  color: #7e7e7e;
+}
+
+@media (max-width: 462px) {
+  .cards .card,
+  .card.active {
+    width: 100%;
+  }
+
+  .container .actions {
+    margin-top: 1rem;
+    max-width: 100%;
+
+    /* width: 100%; */
+  }
+  .container .actions button {
+    display: flex;
+    justify-content: center;
+  }
+  .container .actions button i {
+    margin-right: 0.5rem;
+  }
+}

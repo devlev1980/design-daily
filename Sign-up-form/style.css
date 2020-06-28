@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #201d44;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 517px;
+  width: 100%;
+  padding: 50px;
+  height: 100%;
+  margin: 10% auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.container .header h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.container .header button {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #5b86e6;
+  color: #ffffff;
+  padding: 10px 30px 10px 10px;
+  border-radius: 5px;
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.container .header button img {
+  width: 35px;
+  height: auto;
+  background: white;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+@media (max-width: 366px) {
+  .container .header button img {
+    display: none;
+  }
+}
+
+.container .header button span {
+  font-size: 18px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.container .header .email-sign-up {
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 2rem;
+  color: #949495;
+}
+
+.container .header .email-sign-up::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  width: 23%;
+  height: 1px;
+  background-color: #949495;
+}
+
+@media (max-width: 470px) {
+  .container .header .email-sign-up::before {
+    width: 10%;
+  }
+}
+
+@media (max-width: 320px) {
+  .container .header .email-sign-up::before {
+    width: 6%;
+  }
+}
+
+.container .header .email-sign-up::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 50%;
+  width: 23%;
+  height: 1px;
+  background-color: #949495;
+}
+
+@media (max-width: 470px) {
+  .container .header .email-sign-up::after {
+    width: 10%;
+  }
+}
+
+@media (max-width: 320px) {
+  .container .header .email-sign-up::after {
+    width: 6%;
+  }
+}
+
+.container .form {
+  width: inherit;
+}
+
+.container .form .form-group {
+  width: 100%;
+}
+
+.container .form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.container .form .form-group input.form-control {
+  padding: 20px;
+  width: 100%;
+  margin-bottom: 1rem;
+  border: 1px solid #d9dded;
+  border-radius: 5px;
+}
+
+.container .form .actions {
+  margin-top: 2rem;
+}
+
+.container .form .actions button {
+  width: 100%;
+  background-color: #e65b7c;
+  color: #ffffff;
+  padding: 15px;
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 18px;
+}
+/*# sourceMappingURL=style.css.map */
