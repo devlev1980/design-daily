@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0cff9b54-89a5-43fe-9b4b-1068dd300cb2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Landing_page/img/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Landing_page/img/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Landing_page/img/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Landing_page/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Landing_page/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Articles-page/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Articles-page/style.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1faxk2O8Qds2DjS9sWFpnKbKSC5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0cff9b54-89a5-43fe-9b4b-1068dd300cb2" name="Default Changelist" comment="" />
+      <created>1596470143341</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596470143341</updated>
+      <workItem from="1596470144418" duration="1672000" />
+      <workItem from="1596562130688" duration="25000" />
+      <workItem from="1596562161855" duration="316000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1090" y="529" key="#File_Watchers" timestamp="1596470772725">
+      <screen x="0" y="23" width="2560" height="1342" />
+    </state>
+    <state x="1090" y="529" key="#File_Watchers/-1920.23.1920.1057/0.23.2560.1342@0.23.2560.1342" timestamp="1596470772725" />
+    <state x="782" y="379" key="EditFileWatcherDialog" timestamp="1596470771568">
+      <screen x="0" y="23" width="2560" height="1342" />
+    </state>
+    <state x="782" y="379" key="EditFileWatcherDialog/-1920.23.1920.1057/0.23.2560.1342@0.23.2560.1342" timestamp="1596470771568" />
+    <state x="584" y="158" key="SettingsEditor" timestamp="1596470602592">
+      <screen x="0" y="23" width="2560" height="1342" />
+    </state>
+    <state x="584" y="158" key="SettingsEditor/-1920.23.1920.1057/0.23.2560.1342@0.23.2560.1342" timestamp="1596470602592" />
+  </component>
+</project>
