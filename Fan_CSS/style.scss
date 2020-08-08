@@ -1,0 +1,214 @@
+.fan_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .body-out {
+    max-width: 500px;
+    width: 100%;
+    height: 500px;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .body-leg {
+      width: 5px;
+      height: 60%;
+      background-color: rgb(96, 84, 84);
+      flex: 1 0 auto;
+      position: absolute;
+      top: 50%;
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    }
+    .body-leg.left {
+      left: -15px;
+      transform: rotate(5deg);
+
+      &.second {
+        top: 43.5%;
+        left: 117px;
+        -webkit-transform: rotate(-110deg);
+        transform: rotate(-110deg);
+        width: 5px;
+        height: 250px;
+        // box-shadow: -80px 38px 19px 10px rgba(0, 0, 0, 0.5);
+      }
+    }
+    .body-leg.right {
+      right: -15px;
+      transform: rotate(-5deg);
+      //   position: relative;
+      .switch {
+        position: relative;
+        padding: 5px 10px;
+        // width: 20px;
+        // height: 50px;
+        top: 50%;
+        left: -10px;
+        // background-color: red;
+        transform: translateY(-50%) rotate(-270deg);
+        .toggle {
+          $width: 60px;
+          $height: $width / 2;
+          $border-radius: $height / 2;
+          display: inline-block;
+          cursor: pointer;
+
+          .toggle__fill {
+            position: relative;
+            width: $width;
+            height: $height;
+            border-radius: $border-radius;
+            background-color: #dddddd;
+            display: block;
+            transition: all 0.2s linear;
+            border: 1px solid rgb(96, 84, 84);
+
+            &::after {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              transform: translateX(0);
+              width: $width / 2;
+              height: $height;
+              background-color: #ffffff;
+              border-radius: $border-radius;
+              transition: transform 0.2s linear;
+            }
+          }
+          .togle__input {
+            display: none;
+          }
+          .togle__input:checked ~ .toggle__fill {
+            background-color: rgb(96, 84, 84);
+          }
+          .togle__input:checked ~ .toggle__fill::after {
+            transform: translateX($width / 2);
+          }
+          .togle__input:checked ~ .body-in {
+            // animation: speed 600ms infinite linear;
+          }
+        }
+
+        // input[type="checkbox"]:checked  {
+
+        // }
+      }
+      &.second.right {
+        top: 43.5%;
+        left: -117px;
+        -webkit-transform: rotate(110deg);
+        transform: rotate(110deg);
+        width: 5px;
+        height: 250px;
+        // box-shadow: 20px 38px 19px 10px rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      border: 10px solid rgb(96, 84, 84);
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: #ffffff;
+    }
+
+    .body-in {
+      position: relative;
+      width: 26%;
+      height: 26%;
+      //   border: 5px solid rgb(169, 58, 216);
+      border-radius: 50% !important;
+      z-index: 1100;
+      display: inherit;
+
+      &.animate {
+        animation: speed 500ms infinite linear;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        // border: 5px solid rgb(96, 84, 84);
+        border-radius: 50%;
+        background: black !important;
+        z-index: 1200;
+      }
+      // animation: speed 600ms infinite linear;
+
+      .fan__top,
+      .fan__right,
+      .fan__bottom,
+      .fan__left {
+        position: absolute;
+        background: linear-gradient(
+          45deg,
+          black 3%,
+          black 20%,
+          rgba(87, 87, 87, 0.2) 75%,
+          black 100%,
+          rgba(87, 87, 87, 0.2) 1%,
+          black
+        );
+
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+        clip-path: polygon(
+          0 0,
+          68% 0,
+          100% 30%,
+          100% 70%,
+          70% 100%,
+          30% 100%,
+          32% 67%,
+          0 25%
+        );
+        z-index: 1000;
+        display: block;
+        box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.5);
+      }
+      .fan__top {
+        left: 50%;
+        top: -107%;
+        transform: translate(-50%);
+      }
+      .fan__right {
+        right: -110%;
+        top: 50%;
+        transform: translateY(-50%) rotate(90deg);
+      }
+      .fan__bottom {
+        bottom: -110%;
+        left: 50%;
+        transform: translateX(-50%) rotate(180deg);
+      }
+      .fan__left {
+        left: -110%;
+        top: 50%;
+        transform: translateY(-50%) rotate(-90deg);
+      }
+    }
+  }
+}
+@keyframes speed {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -44,7 +44,7 @@ $black_color: #000000;
       border-radius: 50% !important; /* !importanté */
       background: linear-gradient(
         to bottom,
-        $black_color,
+        red,
         $monitor_bgColor 65%,
         rgba(177, 176, 176, 0.6)
       );

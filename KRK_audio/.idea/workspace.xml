@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cff9b54-89a5-43fe-9b4b-1068dd300cb2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Landing_page/img/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Landing_page/img/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Landing_page/img/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Landing_page/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Landing_page/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Articles-page/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Articles-page/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,18 +53,34 @@
       <updated>1596470143341</updated>
       <workItem from="1596470144418" duration="1672000" />
       <workItem from="1596562130688" duration="25000" />
-      <workItem from="1596562161855" duration="316000" />
+      <workItem from="1596562161855" duration="1030000" />
     </task>
+    <task id="LOCAL-00001" summary="adding Landing page,KRK_audio projects">
+      <created>1596562977692</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1596562977692</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="adding Landing page,KRK_audio projects" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding Landing page,KRK_audio projects" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1090" y="529" key="#File_Watchers" timestamp="1596470772725">
       <screen x="0" y="23" width="2560" height="1342" />
     </state>
     <state x="1090" y="529" key="#File_Watchers/-1920.23.1920.1057/0.23.2560.1342@0.23.2560.1342" timestamp="1596470772725" />
+    <state x="535" y="138" key="CommitChangelistDialog2" timestamp="1596562976243">
+      <screen x="0" y="23" width="2560" height="1342" />
+    </state>
+    <state x="535" y="138" key="CommitChangelistDialog2/-1920.23.1920.1057/0.23.2560.1342@0.23.2560.1342" timestamp="1596562976243" />
     <state x="782" y="379" key="EditFileWatcherDialog" timestamp="1596470771568">
       <screen x="0" y="23" width="2560" height="1342" />
     </state>
@@ -79,5 +89,13 @@
       <screen x="0" y="23" width="2560" height="1342" />
     </state>
     <state x="584" y="158" key="SettingsEditor/-1920.23.1920.1057/0.23.2560.1342@0.23.2560.1342" timestamp="1596470602592" />
+    <state x="680" y="309" key="Vcs.Push.Dialog.v2" timestamp="1596562980544">
+      <screen x="0" y="23" width="2560" height="1342" />
+    </state>
+    <state x="680" y="309" key="Vcs.Push.Dialog.v2/-1920.23.1920.1057/0.23.2560.1342@0.23.2560.1342" timestamp="1596562980544" />
+    <state x="802" y="538" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1596562888989">
+      <screen x="0" y="23" width="2560" height="1342" />
+    </state>
+    <state x="802" y="538" key="git4idea.remote.GitConfigureRemotesDialog/-1920.23.1920.1057/0.23.2560.1342@0.23.2560.1342" timestamp="1596562888989" />
   </component>
 </project>

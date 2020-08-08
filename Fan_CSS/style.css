@@ -1,0 +1,235 @@
+.fan_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.fan_container .body-out {
+  max-width: 500px;
+  width: 100%;
+  height: 500px;
+  border-radius: 50%;
+  border: 10px solid transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.fan_container .body-out .body-leg {
+  width: 5px;
+  height: 60%;
+  background-color: #605454;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  position: absolute;
+  top: 50%;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.fan_container .body-out .body-leg.left {
+  left: -15px;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
+.fan_container .body-out .body-leg.left.second {
+  top: 43.5%;
+  left: 117px;
+  -webkit-transform: rotate(-110deg);
+  transform: rotate(-110deg);
+  width: 5px;
+  height: 250px;
+}
+
+.fan_container .body-out .body-leg.right {
+  right: -15px;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+
+.fan_container .body-out .body-leg.right .switch {
+  position: relative;
+  padding: 5px 10px;
+  top: 50%;
+  left: -10px;
+  -webkit-transform: translateY(-50%) rotate(-270deg);
+          transform: translateY(-50%) rotate(-270deg);
+}
+
+.fan_container .body-out .body-leg.right .switch .toggle {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.fan_container .body-out .body-leg.right .switch .toggle .toggle__fill {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #dddddd;
+  display: block;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  border: 1px solid #605454;
+}
+
+.fan_container .body-out .body-leg.right .switch .toggle .toggle__fill::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.fan_container .body-out .body-leg.right .switch .toggle .togle__input {
+  display: none;
+}
+
+.fan_container .body-out .body-leg.right .switch .toggle .togle__input:checked ~ .toggle__fill {
+  background-color: #605454;
+}
+
+.fan_container .body-out .body-leg.right .switch .toggle .togle__input:checked ~ .toggle__fill::after {
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px);
+}
+
+.fan_container .body-out .body-leg.right.second.right {
+  top: 43.5%;
+  left: -117px;
+  -webkit-transform: rotate(110deg);
+  transform: rotate(110deg);
+  width: 5px;
+  height: 250px;
+}
+
+.fan_container .body-out:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border: 10px solid #605454;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.fan_container .body-out .body-in {
+  position: relative;
+  width: 26%;
+  height: 26%;
+  border-radius: 50% !important;
+  z-index: 1100;
+  display: inherit;
+}
+
+.fan_container .body-out .body-in.animate {
+  -webkit-animation: speed 500ms infinite linear;
+          animation: speed 500ms infinite linear;
+}
+
+.fan_container .body-out .body-in::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: black !important;
+  z-index: 1200;
+}
+
+.fan_container .body-out .body-in .fan__top,
+.fan_container .body-out .body-in .fan__right,
+.fan_container .body-out .body-in .fan__bottom,
+.fan_container .body-out .body-in .fan__left {
+  position: absolute;
+  background: linear-gradient(45deg, black 3%, black 20%, rgba(87, 87, 87, 0.2) 75%, black 100%, rgba(87, 87, 87, 0.2) 1%, black);
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  -webkit-clip-path: polygon(0 0, 68% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 32% 67%, 0 25%);
+          clip-path: polygon(0 0, 68% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 32% 67%, 0 25%);
+  z-index: 1000;
+  display: block;
+  -webkit-box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.5);
+}
+
+.fan_container .body-out .body-in .fan__top {
+  left: 50%;
+  top: -107%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.fan_container .body-out .body-in .fan__right {
+  right: -110%;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
+}
+
+.fan_container .body-out .body-in .fan__bottom {
+  bottom: -110%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) rotate(180deg);
+          transform: translateX(-50%) rotate(180deg);
+}
+
+.fan_container .body-out .body-in .fan__left {
+  left: -110%;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+          transform: translateY(-50%) rotate(-90deg);
+}
+
+@-webkit-keyframes speed {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes speed {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
